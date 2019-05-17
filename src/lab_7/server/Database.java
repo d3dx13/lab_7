@@ -10,6 +10,8 @@ import java.nio.file.Files;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.PriorityBlockingQueue;
 
+import static lab_6.Settings.databasePath;
+
 
 /**
  * Главный класс для работы с коллекциями аккаунтов и "Танцоров".
@@ -21,7 +23,7 @@ public class Database {
     /**
      * Путь к директории с текущей коллекцией.
      */
-    public static File collectionPath = new File("database/");
+    public static File collectionPath = new File(databasePath);
     /**
      * Коллекция "Танцоров".
      */

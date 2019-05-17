@@ -5,6 +5,7 @@ package lab_6;
  */
 public final class Settings {
     /**
+     *
      * Стандартный порт сервера
      */
     public final static int ApplicationPort = 25768;
@@ -19,7 +20,7 @@ public final class Settings {
     /**
      * Длина случайной последовательности для подтверждения личности пользователя
      */
-    public final static int identificationRandomSize= 100;
+    public final static int identificationRandomSize= 200;
     /**
      * Длина (в байтах) хеша на основе пароля пользователя, являющегося AES секретным ключом.
      */
@@ -27,7 +28,7 @@ public final class Settings {
     /**
      * Длина (в битах) RSA ключей для регистрации пользователя.
      */
-    public final static int userRSAKeyLength = 1024;
+    public final static int userRSAKeyLength = 2048;
     /**
      * Время ожидания сообщения на стороне клиента. (в секундах)
      */
@@ -40,4 +41,8 @@ public final class Settings {
      * Количество потоков, выделяемых на сервере для обработки запросов пользователей.
      */
     public final static int threadPoolSize = 4;
+    /**
+     * Путь к базе данных.
+     */
+    public final static String databasePath = "src/database/";
 }

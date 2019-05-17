@@ -1,8 +1,8 @@
-package lab_6.world.creation;
+package lab_7.world.creation;
 
-import lab_6.world.IdMaster;
-import lab_6.world.base.*;
-import lab_6.world.state.*;
+import lab_7.world.IdMaster;
+import lab_7.world.base.*;
+import lab_7.world.state.*;
 
 import java.io.Serializable;
 

@@ -1,10 +1,10 @@
-package lab_6.client.core;
+package lab_7.client.core;
 
-import lab_6.message.Crypted;
-import lab_6.message.Message;
-import lab_6.message.loggingIn.*;
-import lab_6.message.registration.*;
-import lab_6.crypto.ObjectCryption;
+import lab_7.message.Crypted;
+import lab_7.message.Message;
+import lab_7.message.loggingIn.*;
+import lab_7.message.registration.*;
+import lab_7.crypto.ObjectCryption;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
@@ -24,7 +24,7 @@ import java.security.spec.RSAKeyGenParameterSpec;
 import java.time.Instant;
 import java.util.Arrays;
 
-import static lab_6.Settings.*;
+import static lab_7.Settings.*;
 
 /**
  * Класс для реализации сетевой коммуникации на стороне клиента.

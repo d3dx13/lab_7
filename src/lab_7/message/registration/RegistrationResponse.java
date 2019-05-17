@@ -1,4 +1,4 @@
-package lab_6.message.registration;
+package lab_7.message.registration;
 import java.io.Serializable;
 
 /**

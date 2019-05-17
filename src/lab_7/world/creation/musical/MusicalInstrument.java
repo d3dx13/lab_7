@@ -1,9 +1,9 @@
-package lab_6.world.creation.musical;
+package lab_7.world.creation.musical;
 
-import lab_6.world.creation.Thing;
-import lab_6.world.state.DynamicsState;
-import lab_6.world.state.FeelState;
-import lab_6.world.state.PositionState;
+import lab_7.world.creation.Thing;
+import lab_7.world.state.DynamicsState;
+import lab_7.world.state.FeelState;
+import lab_7.world.state.PositionState;
 
 import java.io.Serializable;
 

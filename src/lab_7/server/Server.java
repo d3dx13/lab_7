@@ -1,8 +1,8 @@
-package lab_6.server;
+package lab_7.server;
 
-import lab_6.server.core.MultiThreadServer;
+import lab_7.server.core.MultiThreadServer;
 
-import static lab_6.server.Database.*;
+import static lab_7.server.Database.*;
 
 /**
  * Оболочка многопоточного сервера.

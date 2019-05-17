@@ -1,11 +1,11 @@
-package lab_6.world.creation;
+package lab_7.world.creation;
 
-import lab_6.world.IdMaster;
-import lab_6.world.base.Affected;
-import lab_6.world.base.Existing;
-import lab_6.world.state.AffectState;
-import lab_6.world.state.DynamicsState;
-import lab_6.world.state.PositionState;
+import lab_7.world.IdMaster;
+import lab_7.world.base.Affected;
+import lab_7.world.base.Existing;
+import lab_7.world.state.AffectState;
+import lab_7.world.state.DynamicsState;
+import lab_7.world.state.PositionState;
 
 import java.io.Serializable;
 

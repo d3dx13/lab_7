@@ -1,18 +1,18 @@
-package lab_6.server.core;
+package lab_7.server.core;
 
-import lab_6.message.Account;
-import lab_6.message.Message;
-import lab_6.world.creation.Dancer;
-import lab_6.world.state.FeelState;
-import lab_6.world.state.PositionState;
-import lab_6.world.state.ThinkState;
+import lab_7.message.Account;
+import lab_7.message.Message;
+import lab_7.world.creation.Dancer;
+import lab_7.world.state.FeelState;
+import lab_7.world.state.PositionState;
+import lab_7.world.state.ThinkState;
 
 import java.time.Instant;
 import java.util.Date;
 
-import static lab_6.server.Database.*;
-import static lab_6.server.Database.collectionLoad;
-import static lab_6.server.Database.getInfo;
+import static lab_7.server.Database.*;
+import static lab_7.server.Database.collectionLoad;
+import static lab_7.server.Database.getInfo;
 
 /**
  * Класс, который содержит методы для выполнения команд, приходящих с клиента на сервер, и создания ответа клиенту.

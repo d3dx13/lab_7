@@ -1,6 +1,6 @@
-package lab_6.world.base;
+package lab_7.world.base;
 
-import lab_6.world.state.FeelState;
+import lab_7.world.state.FeelState;
 
 public interface Feeling {
     public FeelState feel();

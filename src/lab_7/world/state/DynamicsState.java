@@ -1,4 +1,4 @@
-package lab_6.world.state;
+package lab_7.world.state;
 
 import java.io.Serializable;
 

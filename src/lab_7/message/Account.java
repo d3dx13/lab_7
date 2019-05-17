@@ -1,4 +1,4 @@
-package lab_6.message;
+package lab_7.message;
 
 import java.io.Serializable;
 

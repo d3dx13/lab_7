@@ -1,7 +1,7 @@
-package lab_6.client.userInterface;
+package lab_7.client.userInterface;
 
-import lab_6.message.Message;
-import lab_6.world.creation.Dancer;
+import lab_7.message.Message;
+import lab_7.world.creation.Dancer;
 
 
 /**

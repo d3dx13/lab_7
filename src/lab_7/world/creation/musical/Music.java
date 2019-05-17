@@ -1,11 +1,11 @@
-package lab_6.world.creation.musical;
+package lab_7.world.creation.musical;
 
-import lab_6.world.base.Affected;
-import lab_6.world.base.Affecting;
-import lab_6.world.base.Feeling;
-import lab_6.world.IdMaster;
-import lab_6.world.state.AffectState;
-import lab_6.world.state.FeelState;
+import lab_7.world.base.Affected;
+import lab_7.world.base.Affecting;
+import lab_7.world.base.Feeling;
+import lab_7.world.IdMaster;
+import lab_7.world.state.AffectState;
+import lab_7.world.state.FeelState;
 
 import java.io.Serializable;
 

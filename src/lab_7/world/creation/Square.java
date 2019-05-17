@@ -1,13 +1,13 @@
-package lab_6.world.creation;
+package lab_7.world.creation;
 
 import java.io.*;
 import java.util.*;
 
-import lab_6.world.exception.SetupHyperParametersException;
-import lab_6.world.state.DynamicsState;
-import lab_6.world.state.FeelState;
-import lab_6.world.state.PositionState;
-import lab_6.world.state.ThinkState;
+import lab_7.world.exception.SetupHyperParametersException;
+import lab_7.world.state.DynamicsState;
+import lab_7.world.state.FeelState;
+import lab_7.world.state.PositionState;
+import lab_7.world.state.ThinkState;
 import org.json.*;
 
 public class Square implements Serializable{

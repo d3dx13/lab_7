@@ -1,7 +1,7 @@
-package lab_6.world.creation;
+package lab_7.world.creation;
 
-import lab_6.world.state.DynamicsState;
-import lab_6.world.state.FeelState;
+import lab_7.world.state.DynamicsState;
+import lab_7.world.state.FeelState;
 
 import java.io.Serializable;
 import java.util.Date;

@@ -1,7 +1,7 @@
-package lab_6.world;
+package lab_7.world;
 
-import lab_6.world.creation.Dancer;
-import lab_6.world.creation.Square;
+import lab_7.world.creation.Dancer;
+import lab_7.world.creation.Square;
 
 import java.io.*;
 

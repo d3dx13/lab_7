@@ -1,16 +1,16 @@
-package lab_6.server;
+package lab_7.server;
 
-import lab_6.crypto.ObjectCryption;
-import lab_6.message.Account;
-import lab_6.message.CollectionInfo;
-import lab_6.world.creation.Dancer;
+import lab_7.crypto.ObjectCryption;
+import lab_7.message.Account;
+import lab_7.message.CollectionInfo;
+import lab_7.world.creation.Dancer;
 
 import java.io.*;
 import java.nio.file.Files;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.PriorityBlockingQueue;
 
-import static lab_6.Settings.databasePath;
+import static lab_7.Settings.databasePath;
 
 
 /**

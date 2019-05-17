@@ -1,4 +1,4 @@
-package lab_6.world;
+package lab_7.world;
 
 public class IdMaster {
     public static int idCounter = 4096;

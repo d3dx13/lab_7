@@ -1,17 +1,17 @@
-package lab_6.server.core;
-import lab_6.message.*;
-import lab_6.message.loggingIn.*;
-import lab_6.message.registration.*;
-import lab_6.crypto.ObjectCryption;
+package lab_7.server.core;
+import lab_7.message.*;
+import lab_7.message.loggingIn.*;
+import lab_7.message.registration.*;
+import lab_7.crypto.ObjectCryption;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
 
-import static lab_6.server.Database.*;
-import static lab_6.server.core.SignUpInHandler.*;
-import static lab_6.server.core.CommandHandler.*;
+import static lab_7.server.Database.*;
+import static lab_7.server.core.SignUpInHandler.*;
+import static lab_7.server.core.CommandHandler.*;
 
 /**
  * Запускаемый Runnable поток для обработки запроса пользователя.

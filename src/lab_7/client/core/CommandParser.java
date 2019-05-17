@@ -1,7 +1,7 @@
-package lab_6.client.core;
+package lab_7.client.core;
 
-import lab_6.message.Message;
-import lab_6.world.creation.Dancer;
+import lab_7.message.Message;
+import lab_7.world.creation.Dancer;
 import org.json.JSONArray;
 import org.json.JSONObject;
 

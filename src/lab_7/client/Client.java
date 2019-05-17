@@ -1,15 +1,15 @@
-package lab_6.client;
+package lab_7.client;
 
-import lab_6.client.core.CommandParser;
-import lab_6.client.core.NetworkConnection;
-import lab_6.client.userInterface.ConsoleGUI;
+import lab_7.client.core.CommandParser;
+import lab_7.client.core.NetworkConnection;
+import lab_7.client.userInterface.ConsoleGUI;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-import static lab_6.Settings.loginMaximalLength;
-import static lab_6.Settings.loginMinimalLength;
-import static lab_6.client.core.NetworkConnection.getServerAddressr;
+import static lab_7.Settings.loginMaximalLength;
+import static lab_7.Settings.loginMinimalLength;
+import static lab_7.client.core.NetworkConnection.getServerAddressr;
 
 /**
  * Оболочка клиента.

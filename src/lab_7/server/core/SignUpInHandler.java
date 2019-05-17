@@ -1,12 +1,12 @@
-package lab_6.server.core;
+package lab_7.server.core;
 
-import lab_6.message.Account;
-import lab_6.message.loggingIn.AuthenticationRequest;
-import lab_6.message.loggingIn.AuthenticationResponse;
-import lab_6.message.loggingIn.IdentificationRequest;
-import lab_6.message.loggingIn.IdentificationResponse;
-import lab_6.message.registration.RegistrationRequest;
-import lab_6.message.registration.RegistrationResponse;
+import lab_7.message.Account;
+import lab_7.message.loggingIn.AuthenticationRequest;
+import lab_7.message.loggingIn.AuthenticationResponse;
+import lab_7.message.loggingIn.IdentificationRequest;
+import lab_7.message.loggingIn.IdentificationResponse;
+import lab_7.message.registration.RegistrationRequest;
+import lab_7.message.registration.RegistrationResponse;
 
 import javax.crypto.Cipher;
 import java.security.KeyFactory;
@@ -15,9 +15,9 @@ import java.security.spec.X509EncodedKeySpec;
 import java.util.Arrays;
 import java.util.Date;
 
-import static lab_6.Settings.*;
-import static lab_6.server.Database.accounts;
-import static lab_6.server.Database.accountsSave;
+import static lab_7.Settings.*;
+import static lab_7.server.Database.accounts;
+import static lab_7.server.Database.accountsSave;
 
 /**
  * Класс для обработки запросов пользователя на регистрацию, идентификацию и аутентификацию.

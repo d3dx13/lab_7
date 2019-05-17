@@ -1,7 +1,7 @@
-package lab_6.world.base;
+package lab_7.world.base;
 
-import lab_6.world.state.DynamicsState;
-import lab_6.world.state.PositionState;
+import lab_7.world.state.DynamicsState;
+import lab_7.world.state.PositionState;
 
 import java.io.Serializable;
 

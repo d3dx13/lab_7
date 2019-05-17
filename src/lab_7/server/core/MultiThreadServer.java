@@ -1,11 +1,11 @@
-package lab_6.server.core;
+package lab_7.server.core;
 
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import static lab_6.Settings.ApplicationPort;
-import static lab_6.Settings.threadPoolSize;
+import static lab_7.Settings.ApplicationPort;
+import static lab_7.Settings.threadPoolSize;
 
 /**
  * Запускает запрос пользователя на исполнение в одном из потоков FixedThreadPool.

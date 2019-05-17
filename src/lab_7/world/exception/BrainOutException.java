@@ -1,4 +1,4 @@
-package lab_6.world.exception;
+package lab_7.world.exception;
 
 import java.io.Serializable;
 

@@ -1,7 +1,7 @@
-package lab_6.world.base;
+package lab_7.world.base;
 
-import lab_6.world.state.FeelState;
-import lab_6.world.state.ThinkState;
+import lab_7.world.state.FeelState;
+import lab_7.world.state.ThinkState;
 
 public interface Thinking {
     public void think();

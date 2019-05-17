@@ -1,4 +1,4 @@
-package lab_6.message.loggingIn;
+package lab_7.message.loggingIn;
 import java.io.Serializable;
 
 /**

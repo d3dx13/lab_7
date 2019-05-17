@@ -1,15 +1,15 @@
-package lab_6.client.userInterface;
+package lab_7.client.userInterface;
 
-import lab_6.client.core.CommandParser;
-import lab_6.client.core.FileParser;
-import lab_6.client.core.NetworkConnection;
-import lab_6.message.Message;
+import lab_7.client.core.CommandParser;
+import lab_7.client.core.FileParser;
+import lab_7.client.core.NetworkConnection;
+import lab_7.message.Message;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.StreamCorruptedException;
 
-import static lab_6.client.userInterface.TableGUI.printTable;
+import static lab_7.client.userInterface.TableGUI.printTable;
 
 /**
  * Класс для реализации управления коллекцией на сервере через графический интерфейс клиента.

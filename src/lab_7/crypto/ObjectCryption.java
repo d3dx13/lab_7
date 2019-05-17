@@ -1,7 +1,7 @@
-package lab_6.crypto;
+package lab_7.crypto;
 
-import lab_6.message.Crypted;
-import lab_6.message.Message;
+import lab_7.message.Crypted;
+import lab_7.message.Message;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;

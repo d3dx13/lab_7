@@ -149,6 +149,8 @@ class CommandHandler {
         response.text = "add success";
         request.values.parallelStream().map(o -> (Dancer)o).forEach(dancer -> collectionData.add(dancer));
         collectionInfo.lastChangeTime = Date.from(Instant.now()).toString();
+
+
         return response;
     }
 

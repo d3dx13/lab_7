@@ -4,7 +4,7 @@ import lab_7.world.state.DynamicsState;
 import lab_7.world.state.FeelState;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.time.OffsetDateTime;
 import java.time.Instant;
 import java.util.Random;
 
@@ -12,7 +12,7 @@ public class Dancer extends People implements Comparable<Dancer>, Serializable {
     final Random random = new Random();
     /**<p>Дата создания объекта</p>
      */
-    public Date birthday;
+    public OffsetDateTime birthday;
     /**<p>Качество танца</p>
      */
     protected int danceQuality;
@@ -34,7 +34,7 @@ public class Dancer extends People implements Comparable<Dancer>, Serializable {
     public Dancer(String newName, int danceSkill){
         super(newName);
         this.danceQuality = danceSkill;
-        this.birthday = Date.from(Instant.now());
+        this.birthday = OffsetDateTime.from(Instant.now());
     }
 
     /**<p>Танцевать</p>

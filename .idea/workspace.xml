@@ -2,59 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8c998e2-38f5-440e-95ff-15ca6a07de7d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_5_jre7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/DatabaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libraries/postgresql-42.2.5.jre7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab_7.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lab_7.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/accounts" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/accounts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/data" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/info" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/Settings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/client/core/CommandParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/client/core/CommandParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/client/core/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/client/core/FileParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/client/core/NetworkConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/client/core/NetworkConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/client/userInterface/ConsoleGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/client/userInterface/ConsoleGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/client/userInterface/TableGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/client/userInterface/TableGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/crypto/ObjectCryption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/crypto/ObjectCryption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/message/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/message/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/message/CollectionInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/message/CollectionInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/message/Crypted.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/message/Crypted.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/message/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/message/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/message/loggingIn/AuthenticationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/message/loggingIn/AuthenticationRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/message/loggingIn/AuthenticationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/message/loggingIn/AuthenticationResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/message/loggingIn/IdentificationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/message/loggingIn/IdentificationRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/message/loggingIn/IdentificationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/message/loggingIn/IdentificationResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/message/registration/RegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/message/registration/RegistrationRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/message/registration/RegistrationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/message/registration/RegistrationResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/server/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/server/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/server/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab_7/server/core/CommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/server/core/CommandHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/server/core/MonoThreadClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/server/core/MonoThreadClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/server/core/MultiThreadServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/server/core/MultiThreadServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/server/core/SignUpInHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/server/core/SignUpInHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/world/IdMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/world/IdMaster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/world/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/world/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/world/base/Affected.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/world/base/Affected.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/world/base/Affecting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/world/base/Affecting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/world/base/Existing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/world/base/Existing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/world/base/Feeling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/world/base/Feeling.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/world/base/Thinking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/world/base/Thinking.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab_7/world/creation/Dancer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/world/creation/Dancer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/world/creation/People.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/world/creation/People.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/world/creation/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/world/creation/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/world/creation/Thing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/world/creation/Thing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/world/creation/musical/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/world/creation/musical/Music.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/world/creation/musical/MusicalInstrument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/world/creation/musical/MusicalInstrument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/world/creation/musical/StringedMusicalInstrument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/world/creation/musical/StringedMusicalInstrument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/world/exception/BrainOutException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/world/exception/BrainOutException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/world/exception/SetupHyperParametersException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/world/exception/SetupHyperParametersException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/world/state/AffectState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/world/state/AffectState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/world/state/DynamicsState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/world/state/DynamicsState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/world/state/FeelState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/world/state/FeelState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/world/state/PositionState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/world/state/PositionState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/world/state/ThinkState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/world/state/ThinkState.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lab_7/client/core/CommandParser.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+            <state relative-caret-position="261">
+              <caret line="55" column="17" lean-forward="true" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,29 +31,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/database/DatabaseTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lab_7/server/core/CommandHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/lab_7/server/Database.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="133" column="20" selection-start-line="133" selection-start-column="20" selection-end-line="133" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lab_7/Settings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="150">
+              <caret line="29" column="47" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="47" />
+              <folding>
+                <element signature="e#857#865#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,11 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lab_7/world/creation/Dancer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-450">
+              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -119,25 +55,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lab_7/world/creation/People.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="345">
+              <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lab_7/world/creation/Square.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#410#418#0" expanded="true" />
-                <element signature="e#6305#6313#0" expanded="true" />
-                <element signature="e#10486#10494#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,7 +76,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lab_7/world/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="60">
               <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -165,10 +86,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lab_7/world/creation/Thing.java">
+        <entry file="file://$PROJECT_DIR$/src/lab_7/world/state/PositionState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+            <state relative-caret-position="60">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lab_7/world/state/DynamicsState.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lab_7/world/state/AffectState.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lab_7/world/base/Affecting.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -185,6 +133,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>lab_6</find>
+      <find>Data</find>
     </findStrings>
     <replaceStrings>
       <replace>lab_7</replace>
@@ -201,11 +150,13 @@
       <list>
         <option value="$PROJECT_DIR$/src/lab_7/Main.java" />
         <option value="$PROJECT_DIR$/src/lab_7/client/core/CommandParser.java" />
-        <option value="$PROJECT_DIR$/src/lab_7/world/creation/Dancer.java" />
         <option value="$PROJECT_DIR$/src/lab_7/world/creation/People.java" />
         <option value="$PROJECT_DIR$/src/lab_7/world/creation/Square.java" />
         <option value="$PROJECT_DIR$/src/lab_7/world/creation/Thing.java" />
         <option value="$PROJECT_DIR$/src/database/DatabaseTest.java" />
+        <option value="$PROJECT_DIR$/src/lab_7/server/core/CommandHandler.java" />
+        <option value="$PROJECT_DIR$/src/lab_7/world/creation/Dancer.java" />
+        <option value="$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java" />
       </list>
     </option>
   </component>
@@ -220,6 +171,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -256,6 +208,28 @@
               <item name="lab_7" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="lab_7" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lab_7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
+              <item name="crypto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lab_7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
+              <item name="message" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lab_7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -279,7 +253,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="lab_7" type="462c0819:PsiDirectoryNode" />
               <item name="world" type="462c0819:PsiDirectoryNode" />
-              <item name="creation" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lab_7" type="b2602c69:ProjectViewProjectNode" />
@@ -293,26 +267,17 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="libraries" type="462c0819:PsiDirectoryNode" />
               <item name="postgresql-42.2.5.jre7.jar" type="ab9368bb:PsiFileNode" />
-            </path>
-            <path>
-              <item name="lab_7" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="libraries" type="462c0819:PsiDirectoryNode" />
-              <item name="postgresql-42.2.5.jre7.jar" type="ab9368bb:PsiFileNode" />
-              <item name="postgresql" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558127774567" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lab_6" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558674888207" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -335,7 +300,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DatabaseTest">
+  <component name="RunManager" selected="Application.Server">
     <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lab_7.client.Client" />
       <module name="lab_7" />
@@ -375,12 +340,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lab_7.Main" />
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lab_7.server.Server" />
       <module name="lab_7" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lab_7.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -391,11 +359,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DatabaseTest" />
+        <item itemvalue="Application.Server" />
         <item itemvalue="Application.Client (1)" />
+        <item itemvalue="Application.DatabaseTest" />
         <item itemvalue="JAR Application.json.jar" />
         <item itemvalue="Application.Client" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -431,14 +399,21 @@
       <option name="project" value="LOCAL" />
       <updated>1558111763453</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="SQLTest">
+      <created>1558127814079</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558127814079</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
+    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26454183" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27888447" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -447,7 +422,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32868218" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30387598" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.14263566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -470,7 +445,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
     <MESSAGE value="Copy lab6 to lab7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Copy lab6 to lab7" />
+    <MESSAGE value="SQLTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="SQLTest" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -478,84 +454,10 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/lab_7/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/lab_7/server/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="56" column="14" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lab_7/client/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
           <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/world/creation/Dancer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/world/creation/People.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/world/creation/Thing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/world/IdMaster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/world/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/world/creation/Square.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#410#418#0" expanded="true" />
-            <element signature="e#6305#6313#0" expanded="true" />
-            <element signature="e#10486#10494#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/client/core/CommandParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -573,17 +475,158 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/server/core/DatabaseSQL.java" />
+    <entry file="file://$PROJECT_DIR$/src/lab_7/world/base/Existing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/message/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lab_7/server/core/CommandHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="133" column="20" selection-start-line="133" selection-start-column="20" selection-end-line="133" selection-end-column="20" />
+        <state relative-caret-position="1500">
+          <caret line="152" selection-start-line="152" selection-end-line="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/client/core/CommandParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/client/core/FileParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="54" column="50" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/world/state/ThinkState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/world/creation/Thing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/world/creation/Square.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5766">
+          <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#410#418#0" expanded="true" />
+            <element signature="e#6305#6313#0" expanded="true" />
+            <element signature="e#10486#10494#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/database/DatabaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        <state relative-caret-position="68">
+          <caret line="9" column="41" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/world/creation/People.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/world/creation/Dancer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-450">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/world/IdMaster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/world/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/world/state/PositionState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/world/state/DynamicsState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/world/state/AffectState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/world/base/Affecting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/server/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="29" column="47" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="47" />
+          <folding>
+            <element signature="e#857#865#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="55" column="17" lean-forward="true" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -2,6 +2,8 @@ package lab_7.server.core;
 
 import lab_7.message.Account;
 import lab_7.message.Message;
+import lab_7.server.Database;
+import lab_7.server.DatabaseSQL;
 import lab_7.world.creation.Dancer;
 import lab_7.world.state.FeelState;
 import lab_7.world.state.PositionState;
@@ -41,7 +43,7 @@ class CommandHandler {
         if (message.text.length() > 9 && message.text.substring(0,10).equals("disconnect"))
             return disconnect(message);
         if (message.text.length() > 3 && message.text.substring(0,4).equals("show"))
-            return show();
+            return show(message);
         if (message.text.length() > 9 && message.text.substring(0,10).equals("add_if_max"))
             return add_if_max(message);
         if (message.text.length() > 9 && message.text.substring(0,10).equals("add_if_min"))
@@ -131,10 +133,12 @@ class CommandHandler {
      * Реализация с помощью Stream API.
      * @return объект типа Message с коллекцией элементов.
      */
-    private static Message show(){
+    private static Message show(Message request){
         Message response = new Message();
         response.text = "show";
-        collectionData.stream().sorted().forEachOrdered(dancer -> response.values.addLast(dancer));
+        //collectionData.stream().sorted().forEachOrdered(dancer -> response.values.addLast(dancer));
+        //collectionData.stream().sorted().forEachOrdered(dancer -> DatabaseSQL.getFromDB(request.login));
+        response.values.addAll(DatabaseSQL.getFromDB(request.login));
         return response;
     }
 
@@ -150,7 +154,9 @@ class CommandHandler {
         request.values.parallelStream().map(o -> (Dancer)o).forEach(dancer -> collectionData.add(dancer));
         collectionInfo.lastChangeTime = Date.from(Instant.now()).toString();
 
-
+        try {
+            request.values.parallelStream().map(o -> (Dancer) o).forEach(dancer -> DatabaseSQL.insertToDB(dancer, request.login));
+        } catch (Exception e) {e.printStackTrace();}
         return response;
     }
 
@@ -170,10 +176,14 @@ class CommandHandler {
         request.values.parallelStream().map(o -> (Dancer)o).filter(o -> (o.getDanceQuality() >= dancerMax.getDanceQuality())).forEach(dancer -> collectionData.add(dancer));
         response.text = "add_if_max success";
         collectionInfo.lastChangeTime = Date.from(Instant.now()).toString();
+
+        try {
+            request.values.parallelStream().map(o -> (Dancer)o).filter(o -> (o.getDanceQuality() >= dancerMax.getDanceQuality())).forEach(dancer -> DatabaseSQL.insertToDB(dancer, request.login));
+        } catch (Exception e) {e.printStackTrace();}
         return response;
     }
     /**
-     * Метод, выполняющий добавление каждого элемента из коллекции объекта Messsage, если этот элемент меньше или равен максимальному,
+     * Метод, выполняющий добавление каждого элемента из коллекции объекта Message, если этот элемент меньше или равен максимальному,
      * имеющемуся в коллекции на сервере.
      * @param request Объект Message, который содержит коллекци элементов.
      * @return Объект Message, содержащий текст об успешности добавления элементов в коллекцию.
@@ -188,6 +198,11 @@ class CommandHandler {
         request.values.parallelStream().map(o -> (Dancer)o).filter(o -> (o.getDanceQuality() <= dancerMin.getDanceQuality())).forEach(dancer -> collectionData.add(dancer));
         response.text = "add_if_min success";
         collectionInfo.lastChangeTime = Date.from(Instant.now()).toString();
+
+        try {
+            request.values.parallelStream().map(o -> (Dancer)o).filter(o -> (o.getDanceQuality() <= dancerMin.getDanceQuality())).forEach(dancer -> DatabaseSQL.insertToDB(dancer, request.login));
+        } catch (Exception e) {e.printStackTrace();}
+
         return response;
     }
     /**
@@ -201,6 +216,7 @@ class CommandHandler {
         request.values.parallelStream().map(o -> (Dancer)o).forEach(o -> collectionData.remove(o));
         response.text = "remove success";
         collectionInfo.lastChangeTime = Date.from(Instant.now()).toString();
+        request.values.parallelStream().map(o -> (Dancer)o).forEach(o -> DatabaseSQL.removeFromDB(o,request.login));
         return response;
     }
 

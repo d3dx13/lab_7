@@ -10,23 +10,30 @@ public class DatabaseTest {
             String password = "postgres";
             Connection con = DriverManager.getConnection(url,login,password);
             try {
-                String leName = "Lewis";
-                String leSurName="Hamilton";
-                String sql = "INSERT INTO LAB7 (FIRST_NAME, LAST_NAME) VALUES (?,?)";
+                String sql = "INSERT INTO ELEMENTS (dancer_name, feel, think, dynamics, dancer_position," +
+                        " birthday, dancequality, creator) (?,?,?,?,?,?,?,?)";
                 PreparedStatement pst = con.prepareStatement(sql);
-                pst.setString(1,leName);
-                pst.setString(2,leSurName);
+                //pst.setString(1,String.valueOf(dancer.hashCode()+login.hashCode()));
+                pst.setString(1,"lala");
+                pst.setString(2,"ta");
+                pst.setString(3,"udu");
+                pst.setString(4,"sasd");
+                pst.setString(5,"saaa");
+                pst.setString(6, "ass");
+                pst.setString(7,"Sddf");
+                pst.setString(8,"aaaaaa");
                 pst.executeUpdate();
-                Statement stmt = con.createStatement();
+                pst.close();
+                /*Statement stmt = con.createStatement();
                 ResultSet rs = stmt.executeQuery("SELECT * FROM LAB7");
                 while (rs.next())
                 {
-                    String str = rs.getString("name_id") + ":" + rs.getString("first_name");
-                    System.out.println("Name:"+str);
+                    //String str = rs.getString("name_id") + ":" + rs.getString("first_name");
+                    //System.out.println("Name:"+str);
                 }
 
                 rs.close();
-                stmt.close();
+                stmt.close();*/
             }
             finally {
                 con.close();

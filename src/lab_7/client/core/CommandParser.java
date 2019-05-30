@@ -109,6 +109,7 @@ public class CommandParser {
             response.time = Instant.now().getEpochSecond() * 1000000L + (long) Instant.now().getNano() /1000;
             response.login = userLogin;
         } catch (Exception ex){
+            ex.printStackTrace();
             try{
                 JSONArray JSONarr = new JSONArray(inputJSON);
                 for (Object iter : JSONarr){

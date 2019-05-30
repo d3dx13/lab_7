@@ -34,7 +34,7 @@ public class Dancer extends People implements Comparable<Dancer>, Serializable {
     public Dancer(String newName, int danceSkill){
         super(newName);
         this.danceQuality = danceSkill;
-        this.birthday = OffsetDateTime.from(Instant.now());
+        this.birthday = OffsetDateTime.now();
     }
 
     /**<p>Танцевать</p>

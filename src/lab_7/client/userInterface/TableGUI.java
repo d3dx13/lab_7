@@ -26,10 +26,11 @@ class TableGUI {
                 "dynamics",
                 "feel",
                 "think",
-                "position"
+                "position",
+                "owner"
         };
-        int[] tableMaxLength = new int[7];
-        for (int i = 0; i < 7; i++)
+        int[] tableMaxLength = new int[8];
+        for (int i = 0; i < 8; i++)
             tableMaxLength[i] = tableHeader[i].length();
         for (Object iter : message.values){
             Dancer dancer = (Dancer)iter;
@@ -47,9 +48,11 @@ class TableGUI {
                 tableMaxLength[5] = dancer.thinkState.toString().length();
             if (dancer.positionState != null && dancer.positionState.toString().length() > tableMaxLength[6])
                 tableMaxLength[6] = dancer.positionState.toString().length();
+            if (dancer.owner != null && dancer.owner.length() > tableMaxLength[7])
+                tableMaxLength[7] = dancer.owner.length();
         }
         StringBuffer formatBuffer = new StringBuffer();
-        for (int i = 0; i < 7; i++){
+        for (int i = 0; i < 8; i++){
             formatBuffer.append("|%-");
             formatBuffer.append(tableMaxLength[i]);
             formatBuffer.append("s");
@@ -62,7 +65,8 @@ class TableGUI {
                 tableHeader[3],
                 tableHeader[4],
                 tableHeader[5],
-                tableHeader[6]);
+                tableHeader[6],
+                tableHeader[7]);
         printLine('-', header.length() - 1);
         System.out.print(header);
         printLine('-', header.length() - 1);
@@ -76,7 +80,8 @@ class TableGUI {
                     dancer.dynamicsStateState,
                     dancer.feelState,
                     dancer.thinkState,
-                    dancer.positionState));
+                    dancer.positionState,
+                    dancer.owner));
         }
         System.out.print(stringBuffer.toString());
         printLine('-', header.length() - 1);

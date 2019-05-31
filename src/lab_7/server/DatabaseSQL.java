@@ -54,7 +54,7 @@ public class DatabaseSQL {
                 ResultSet rs = stmt.executeQuery("SELECT * FROM Elements");
                 while (rs.next())
                 {
-                    if (rs.getString("creator").equals(login)) {
+
                         Dancer dancer = new Dancer(rs.getString("DANCER_NAME"));
                         for (int i = 1; i <= rs.getMetaData().getColumnCount(); i++) {
                             if (!rs.getString(i).equals("..."))
@@ -63,7 +63,7 @@ public class DatabaseSQL {
                         dancer.setParam("dancer_position", rs.getString("dancer_position"));
                         dancer.birthday = OffsetDateTime.parse(rs.getString("birthday"));
                         dancers.add(dancer);
-                    }
+
                 }
                 rs.close();
                 stmt.close();

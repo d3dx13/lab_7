@@ -10,6 +10,9 @@ import java.util.Random;
 
 public class Dancer extends People implements Comparable<Dancer>, Serializable {
     final Random random = new Random();
+    /**<p>User, создавший танцора. Люк, я твой отец.</p>
+     */
+    public String owner = "NoName";
     /**<p>Дата создания объекта</p>
      */
     public OffsetDateTime birthday;

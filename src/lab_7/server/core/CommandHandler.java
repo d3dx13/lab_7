@@ -137,7 +137,6 @@ class CommandHandler {
         Message response = new Message();
         response.text = "show";
         //collectionData.stream().sorted().forEachOrdered(dancer -> response.values.addLast(dancer));
-        //collectionData.stream().sorted().forEachOrdered(dancer -> DatabaseSQL.getFromDB(request.login));
         response.values.addAll(DatabaseSQL.getFromDB(request.login));
         return response;
     }
@@ -151,6 +150,7 @@ class CommandHandler {
     private static Message add(Message request){
         Message response = new Message();
         response.text = "add success";
+        request.values.parallelStream().map(o -> (Dancer)o).forEach(dancer -> dancer.owner = request.login);
         request.values.parallelStream().map(o -> (Dancer)o).forEach(dancer -> collectionData.add(dancer));
         collectionInfo.lastChangeTime = Date.from(Instant.now()).toString();
 

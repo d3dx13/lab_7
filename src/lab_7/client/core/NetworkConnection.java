@@ -1,5 +1,6 @@
 package lab_7.client.core;
 
+import lab_7.crypto.Mail;
 import lab_7.message.Crypted;
 import lab_7.message.Message;
 import lab_7.message.loggingIn.*;
@@ -74,20 +75,10 @@ public class NetworkConnection {
                 System.out.println("!!! Login must be %d to %d characters !!!");
                 return false;
             }
-            System.out.print("\nEnter your password: ");
-            password = reader.readLine();
-            System.out.print("\nRetype your password: ");
-            String passwordRetype = reader.readLine();
-            if (!passwordRetype.equals(password)) {
-                System.out.println("Passwords do not match");
-                return false;
-            }
-            if (password.equals("")){
-                System.out.println(new StringBuffer()
-                        .append("\n\"Enter\" instead of a password\n")
-                        .append("Glory to Richard Matthew Stallman !!!\n")
-                        .append("\"NO\" to passwords !!!\n\n"));
-            }
+            password = randomAlphaNumeric(8);
+            System.out.println(new StringBuilder()
+                    .append("Введите вашу электронную почту (на неё будет отправлен пароль): "));
+            String email = reader.readLine().trim();
             System.out.println("\nGenerating RSA pair...");
             KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance("RSA");
             RSAKeyGenParameterSpec kpgSpec = new RSAKeyGenParameterSpec(userRSAKeyLength, BigInteger.probablePrime(userRSAKeyLength - 1, new SecureRandom()));
@@ -109,6 +100,10 @@ public class NetworkConnection {
             if (registrationResponse.confirm) {
                 System.out.println(registrationResponse.message);
                 objectCryption.setSecretKey(secretKey);
+                if (password.equals(""))
+                    Mail.sendMessage(email, "Ваш логин: \""+registrationRequest.login+"\"\nВаш пароль - просто клацните по клавише Enter.\nНе безопасно, но кому нужны эти пароли, верно?\nGlory to Richard Matthew Stallman !!!\n");
+                else
+                    Mail.sendMessage(email, "Ваш логин: \""+registrationRequest.login+"\"\nВаш пароль: \""+password+"\"\nНе удаляйте это сообщение или перепишите пароль.\nКопии этого пароля не существует\n");
                 return true;
             } else
                 System.out.println("failed\nReason: " + registrationResponse.message);
@@ -229,4 +224,18 @@ public class NetworkConnection {
      * Экземпляр класса ObjectCryption для работы с шифрованием и сериализацией.
      */
     public static ObjectCryption objectCryption = new ObjectCryption();
+    /**
+     * Функция генерации случайной строки.
+     * @param count длина
+     * @return Ответ сервера
+     */
+    public static String randomAlphaNumeric(int count) {
+        final String ALPHA_NUMERIC_STRING = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        StringBuilder builder = new StringBuilder();
+        while (count-- != 0) {
+            int character = (int)(Math.random()*ALPHA_NUMERIC_STRING.length());
+            builder.append(ALPHA_NUMERIC_STRING.charAt(character));
+        }
+        return builder.toString();
+    }
 }

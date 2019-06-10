@@ -6,6 +6,7 @@ import lab_7.client.core.NetworkConnection;
 import lab_7.message.Message;
 
 import java.io.BufferedReader;
+import java.io.Console;
 import java.io.InputStreamReader;
 import java.io.StreamCorruptedException;
 
@@ -55,5 +56,12 @@ public class ConsoleGUI {
                 break;
             }
         }
+    }
+
+    public static String passwordInsert()
+    {
+        Console console = System.console();
+        String password = new String(console.readPassword());
+        return password;
     }
 }

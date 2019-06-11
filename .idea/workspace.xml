@@ -8,10 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d8c998e2-38f5-440e-95ff-15ca6a07de7d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/accounts" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/accounts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/client/core/NetworkConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/client/core/NetworkConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/server/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/server/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,20 +57,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lab_7/server/core/CommandHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="60" column="39" lean-forward="true" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
+            <state relative-caret-position="900">
+              <caret line="60" column="39" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2095#2112#0" expanded="true" />
@@ -87,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/src/lab_7/server/Database.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-394">
-              <caret line="39" column="27" lean-forward="true" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+              <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
               <folding>
                 <element signature="e#857#865#0" expanded="true" />
               </folding>
@@ -99,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/src/lab_7/message/Account.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -166,10 +162,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
-    <option name="width" value="1346" />
-    <option name="height" value="692" />
+    <option name="x" value="537" />
+    <option name="y" value="24" />
+    <option name="width" value="829" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -283,7 +279,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560267486782" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560268874777" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -462,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560263309370</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="+ сохранение и загрузка Accounts с помощью БД">
+      <created>1560267535148</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1560267535148</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -475,7 +478,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
+    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20956175" />
@@ -547,7 +550,8 @@
     <MESSAGE value="+ passwordInsert" />
     <MESSAGE value="+new table&#10;+фикс ошибок" />
     <MESSAGE value="+ скрытый ввод пароля" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ скрытый ввод пароля" />
+    <MESSAGE value="+ сохранение и загрузка Accounts с помощью БД" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ сохранение и загрузка Accounts с помощью БД" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -895,24 +899,7 @@
     <entry file="file://$PROJECT_DIR$/src/lab_7/message/Account.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/server/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-394">
-          <caret line="39" column="27" lean-forward="true" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
-          <folding>
-            <element signature="e#857#865#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/server/core/CommandHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
@@ -926,14 +913,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/server/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-394">
+          <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+          <folding>
+            <element signature="e#857#865#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="60" column="39" lean-forward="true" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
+        <state relative-caret-position="900">
+          <caret line="60" column="39" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2095#2112#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/server/core/CommandHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
         </state>
       </provider>
     </entry>

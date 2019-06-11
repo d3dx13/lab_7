@@ -131,15 +131,16 @@ public class Database {
             File dataPath = new File(collectionPath.getPath() + "/accounts");
             if (!dataPath.exists())
                 accountsSave();
-            accounts = (ConcurrentHashMap<String, Account>)objectCryption.messageDeserialize(Files.readAllBytes(dataPath.toPath()));
+            //accounts = (ConcurrentHashMap<String, Account>)objectCryption.messageDeserialize(Files.readAllBytes(dataPath.toPath()));
+            accounts = DatabaseSQL.loadAccounts();
             return true;
-        } catch (FileNotFoundException e) {
+        /*} catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
             return false;
         } catch (IOException e) {
             System.out.println(e.getMessage());
-            return false;
-        } catch (ClassNotFoundException e) {
+            return false;*/
+        } catch (Exception e) {
             System.out.println(e.getMessage());
             return false;
         }

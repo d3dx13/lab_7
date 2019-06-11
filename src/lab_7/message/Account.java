@@ -13,4 +13,5 @@ public final class Account implements Serializable {
     public long lastAccessTime = 0;
     public byte [] random = null; //Сессионная случайная последовательность !!! Не сохранять в базе данных !!!
     public byte [] secretKey = null; //Сессионный пароль AES-256 !!! Не сохранять в базе данных !!!
+
 }

@@ -14,7 +14,7 @@ import java.util.Date;
 
 import static lab_7.server.Database.*;
 import static lab_7.server.Database.collectionLoad;
-import static lab_7.server.Database.getInfo;
+import static lab_7.server.DatabaseSQL.getInfoSQL;
 
 /**
  * Класс, который содержит методы для выполнения команд, приходящих с клиента на сервер, и создания ответа клиенту.
@@ -264,7 +264,7 @@ class CommandHandler {
      */
     private static Message info(){
         Message response = new Message();
-        response.text = "info\n" + getInfo();
+        response.text = "info\n" + getInfoSQL();
         return response;
     }
 }

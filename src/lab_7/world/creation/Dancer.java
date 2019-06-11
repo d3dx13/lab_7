@@ -117,6 +117,9 @@ public class Dancer extends People implements Comparable<Dancer>, Serializable {
             case "position":
                 this.positionState = positionState.valueOf(value);
                 return true;
+            case "owner":
+                this.owner = value;
+                return true;
             default:
                 return false;
         }

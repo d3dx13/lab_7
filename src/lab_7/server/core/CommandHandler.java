@@ -58,7 +58,20 @@ class CommandHandler {
             return load();
         if (message.text.length() > 3 && message.text.substring(0,4).equals("info"))
             return info();
+        if (message.text.length() > 8 && message.text.substring(0,9).equals("new table"))
+            return newTable();
         return new Message();
+    }
+
+    private static Message newTable()
+    {
+        Message response = new Message();
+        if(DatabaseSQL.newTableDefault())
+        {
+            response.text = "success";
+        }
+        else { response.text = "error"; }
+        return response;
     }
 
     /**
@@ -150,7 +163,6 @@ class CommandHandler {
     private static Message add(Message request){
         Message response = new Message();
         response.text = "add success";
-        request.values.parallelStream().map(o -> (Dancer)o).forEach(dancer -> dancer.owner = request.login);
         request.values.parallelStream().map(o -> (Dancer)o).forEach(dancer -> collectionData.add(dancer));
         collectionInfo.lastChangeTime = Date.from(Instant.now()).toString();
 

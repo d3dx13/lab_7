@@ -95,6 +95,10 @@ public class CommandParser {
             response.text = "help";
             return response;
         }
+        else if (inputJSON.length() > 8 && inputJSON.substring(0,9).equalsIgnoreCase("new table")){
+            response.text = "new table";
+            return response;
+        }
         else if (inputJSON.length() > 5 && inputJSON.substring(0,6).equalsIgnoreCase("import")){
             response.text = "import";
             return response;

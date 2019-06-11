@@ -123,13 +123,14 @@ public class NetworkConnection {
     public static boolean signIn() {
         try {
             String password;
+            Console console = System.console();
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             IdentificationRequest identificationRequest = new IdentificationRequest();
             identificationRequest.login = NetworkConnection.objectCryption.getUserLogin();
             IdentificationResponse identificationResponse = identification(identificationRequest);
             AuthenticationRequest authenticationRequest = new AuthenticationRequest();
             System.out.print("Logging in...\nEnter your password: ");
-            password = reader.readLine();
+            password = new String(console.readPassword());
             MessageDigest sha = MessageDigest.getInstance("SHA-256");
             SecretKeySpec secretKeySpec = new SecretKeySpec(Arrays.copyOf(sha.digest(password.getBytes(Charset.forName("UTF-8"))), userAESKeySize), "AES");
             Cipher cipher = Cipher.getInstance("AES");

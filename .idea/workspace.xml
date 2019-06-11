@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="lab_7:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d8c998e2-38f5-440e-95ff-15ca6a07de7d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/accounts" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/accounts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/data" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/info" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/client/core/CommandParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/client/core/CommandParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/server/core/CommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/server/core/CommandHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/world/creation/Dancer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/world/creation/Dancer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab_7/client/core/NetworkConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/client/core/NetworkConnection.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +23,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lab_7/client/userInterface/ConsoleGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+            <state relative-caret-position="285">
+              <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lab_7/client/core/NetworkConnection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="138" column="63" lean-forward="true" selection-start-line="138" selection-start-column="63" selection-end-line="138" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lab_7/client/core/FileParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -32,7 +50,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lab_7/client/core/CommandParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="643">
               <caret line="97" column="66" selection-start-line="97" selection-start-column="66" selection-end-line="97" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -53,17 +71,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lab_7/server/core/CommandHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
+            <state relative-caret-position="161">
               <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+            <state relative-caret-position="-150">
+              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,6 +94,18 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1484">
               <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lab_7/server/Database.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="107" column="37" selection-start-line="107" selection-start-column="37" selection-end-line="107" selection-end-column="37" />
+              <folding>
+                <element signature="e#857#865#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,7 +149,6 @@
         <option value="$PROJECT_DIR$/src/database/data" />
         <option value="$PROJECT_DIR$/src/database/info" />
         <option value="$PROJECT_DIR$/src/lab_7/server/Server.java" />
-        <option value="$PROJECT_DIR$/src/lab_7/client/core/NetworkConnection.java" />
         <option value="$PROJECT_DIR$/src/lab_7/client/userInterface/TableGUI.java" />
         <option value="$PROJECT_DIR$/src/database/accounts" />
         <option value="$PROJECT_DIR$/src/lab_7/client/userInterface/ConsoleGUI.java" />
@@ -128,6 +157,7 @@
         <option value="$PROJECT_DIR$/src/lab_7/server/core/CommandHandler.java" />
         <option value="$PROJECT_DIR$/src/lab_7/client/core/CommandParser.java" />
         <option value="$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java" />
+        <option value="$PROJECT_DIR$/src/lab_7/client/core/NetworkConnection.java" />
       </list>
     </option>
   </component>
@@ -180,6 +210,14 @@
               <item name="lab_7" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lab_7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="userInterface" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lab_7" type="b2602c69:ProjectViewProjectNode" />
@@ -241,11 +279,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560256167007" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560263015703" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -406,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560185010639</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="+new table&#10;+фикс ошибок">
+      <created>1560259666099</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1560259666111</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -422,7 +467,7 @@
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20956175" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20956175" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -432,7 +477,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32868218" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.4372093" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.26666668" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.26666668" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32868218" />
@@ -460,20 +505,14 @@
     <MESSAGE value="+ add, show, remove в БД" />
     <MESSAGE value="на паре 31.05(+Mail)" />
     <MESSAGE value="+ passwordInsert" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ passwordInsert" />
+    <MESSAGE value="+new table&#10;+фикс ошибок" />
+    <option name="LAST_COMMIT_MESSAGE" value="+new table&#10;+фикс ошибок" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/lab_7/world/exception/SetupHyperParametersException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/time/ZoneOffset.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -578,20 +617,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/data">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2925">
           <caret line="262" selection-start-line="262" selection-end-line="262" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="112" lean-forward="true" selection-start-line="2" selection-start-column="112" selection-end-line="2" selection-end-column="112" />
         </state>
       </provider>
     </entry>
@@ -661,28 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="28" column="6" lean-forward="true" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/accounts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-974" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/client/core/NetworkConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="125" column="72" selection-start-line="125" selection-start-column="72" selection-end-line="125" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/server/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-          <folding>
-            <element signature="e#857#865#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -808,9 +815,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/message/loggingIn/IdentificationRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/server/core/CommandHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-48" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="112" lean-forward="true" selection-start-line="2" selection-start-column="112" selection-end-line="2" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/accounts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/server/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="107" column="37" selection-start-line="107" selection-start-column="37" selection-end-line="107" selection-end-column="37" />
+          <folding>
+            <element signature="e#857#865#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/client/core/FileParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lab_7/client/core/CommandParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="643">
           <caret line="97" column="66" selection-start-line="97" selection-start-column="66" selection-end-line="97" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -820,32 +883,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab_7/client/userInterface/ConsoleGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+        <state relative-caret-position="285">
+          <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/server/core/CommandHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/lab_7/client/core/NetworkConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/message/loggingIn/IdentificationRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="231">
+          <caret line="138" column="63" lean-forward="true" selection-start-line="138" selection-start-column="63" selection-end-line="138" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -855,10 +901,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>lab_7:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -914,6 +962,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>javax.mail</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

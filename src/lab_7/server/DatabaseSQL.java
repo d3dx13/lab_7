@@ -1,12 +1,13 @@
 package lab_7.server;
 
 import jdk.nashorn.internal.runtime.ECMAException;
+import lab_7.message.Account;
 import lab_7.world.creation.Dancer;
 
 import java.sql.*;
 import java.time.OffsetDateTime;
 import java.util.LinkedList;
-import java.util.concurrent.PriorityBlockingQueue;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class DatabaseSQL {
     public static String urlStandart = "jdbc:postgresql://localhost:5432/lab7";
@@ -15,6 +16,77 @@ public class DatabaseSQL {
     public static String urlDB = urlStandart;
     public static String loginDB = loginStandart;
     public static String passwordDB = passwordStandart;
+
+
+    public static boolean saveAccount(Account account)
+    {
+        try {
+            Class.forName("org.postgresql.Driver");
+            Connection con = DriverManager.getConnection(urlDB,loginDB,passwordDB);
+            try {
+                String sql = "INSERT INTO USERS (login, publicKey, privateKey, registrationDate, lastAccessTime)" +
+                        " VALUES (?,?,?,?,?)";
+                PreparedStatement pst = con.prepareStatement(sql);
+                //pst.setString(1,String.valueOf(dancer.hashCode()+login.hashCode()));
+                pst.setString(1,account.login.toString());
+                pst.setString(2,account.privateKey.toString());
+                pst.setString(3,account.publicKey.toString());
+                pst.setString(4,account.registrationDate.toString());
+                pst.setString(5,String.valueOf(account.lastAccessTime));
+                pst.executeUpdate();
+                pst.close();
+            }
+            catch (Exception e) {e.printStackTrace();}
+            finally { con.close(); return true;}
+        }
+        catch (Exception e)
+        { e.printStackTrace();return false; }
+    }
+
+
+    public static ConcurrentHashMap<String, Account> loadAccounts()
+    {
+        try {
+            Class.forName("org.postgresql.Driver");
+            Connection con = DriverManager.getConnection(urlDB, loginDB, passwordDB);
+            ConcurrentHashMap<String,Account> accounts = new ConcurrentHashMap<String, Account>();
+            try {
+                Statement stmt = con.createStatement();
+                ResultSet rs = stmt.executeQuery("SELECT * FROM users");
+                while (rs.next())
+                {
+
+                    Account acc = new Account();
+                    acc.login = rs.getString(1);
+                    acc.publicKey = rs.getString(2).getBytes();
+                    acc.privateKey = rs.getString(3).getBytes();
+                    acc.registrationDate = rs.getString(4);
+                    acc.lastAccessTime = Long.valueOf(rs.getString(5));
+
+                    accounts.put("123",acc);//???
+
+                }
+                rs.close();
+                stmt.close();
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+            finally
+            {
+                con.close();
+                return accounts;
+            }
+        }
+        catch (Exception e) {
+
+            e.printStackTrace();
+            return null;
+        }
+
+    }
+
 
     public static boolean newTableDefault()
     {
@@ -60,7 +132,7 @@ public class DatabaseSQL {
     {
         try {
             Class.forName("org.postgresql.Driver");
-            Connection con = DriverManager.getConnection(urlStandart,loginStandart,passwordStandart);
+            Connection con = DriverManager.getConnection(urlDB,loginDB,passwordDB);
             try {
                 String sql = "INSERT INTO ELEMENTS (dancer_name, feel, think, dynamics, dancer_position," +
                         " birthday, dancequality, \"owner\") VALUES (?,?,?,?,?,?,?,?)";
@@ -90,7 +162,7 @@ public class DatabaseSQL {
     {
         try {
             Class.forName("org.postgresql.Driver");
-            Connection con = DriverManager.getConnection(urlStandart, loginStandart, passwordStandart);
+            Connection con = DriverManager.getConnection(urlDB, loginDB, passwordDB);
             LinkedList<Dancer> dancers = new LinkedList<>();
             try {
                 Statement stmt = con.createStatement();
@@ -134,7 +206,7 @@ public class DatabaseSQL {
 
         try {
             Class.forName("org.postgresql.Driver");
-            Connection con = DriverManager.getConnection(urlStandart, loginStandart, passwordStandart);
+            Connection con = DriverManager.getConnection(urlDB, loginDB, passwordDB);
             try {
                 Statement stmt = con.createStatement();
                 ResultSet rs = stmt.executeQuery("SELECT * FROM Elements");

@@ -106,6 +106,11 @@ public class Database {
             fileOutputStream = new FileOutputStream(dataPath, false);
             fileOutputStream.write(objectCryption.messageSerialize(accounts));
             fileOutputStream.close();
+
+            try {
+                accounts.values().parallelStream().forEach(account -> DatabaseSQL.saveAccount(account));
+            } catch (Exception e) {e.printStackTrace();}
+
             return true;
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());

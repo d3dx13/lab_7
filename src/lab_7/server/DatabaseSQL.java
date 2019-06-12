@@ -253,7 +253,19 @@ public class DatabaseSQL {
 
 
     public synchronized static String getInfoSQL(){
-        return "Размер коллекции: " + DatabaseSQL.getFromDB().size();
+        return new StringBuffer()
+                .append("Database url: ")
+                .append(urlDB)
+                .append("\nDatabase login: ")
+                .append(loginDB)
+                .append("\nDatabase password: ")
+                .append(passwordDB)
+                .append("\nDatabase class: ")
+                .append(DatabaseSQL.getFromDB().isEmpty() ? "is Empty" : DatabaseSQL.getFromDB().getFirst().getClass())
+                .append("\nDatabase size: ")
+                .append(DatabaseSQL.getFromDB().size())
+                .append("\n")
+                .toString();
     }
 
 

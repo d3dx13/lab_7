@@ -8,13 +8,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d8c998e2-38f5-440e-95ff-15ca6a07de7d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/accounts" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/accounts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/data" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/info" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/client/core/NetworkConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/client/core/NetworkConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/crypto/Mail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/crypto/Mail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/message/registration/RegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/message/registration/RegistrationRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/server/core/SignUpInHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/server/core/SignUpInHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/DatabaseTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/accounts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,35 +25,57 @@
     <session id="1160919507">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="accounts" value="3" />
+          <entry key="accounts" value="4" />
           <entry key="class" value="1" />
           <entry key="info" value="1" />
-          <entry key="java" value="54" />
+          <entry key="java" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="54" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="JAVA" value="56" />
+          <entry key="PLAIN_TEXT" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="633" />
-          <entry key="txt" value="177" />
+          <entry key="java" value="818" />
+          <entry key="txt" value="564" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="633" />
-          <entry key="PLAIN_TEXT" value="177" />
+          <entry key="JAVA" value="818" />
+          <entry key="PLAIN_TEXT" value="564" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lab_7/server/Database.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="267" column="28" lean-forward="true" selection-start-line="267" selection-start-column="28" selection-end-line="267" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -106,13 +126,13 @@
         <option value="$PROJECT_DIR$/src/lab_7/server/Server.java" />
         <option value="$PROJECT_DIR$/src/lab_7/client/core/CommandParser.java" />
         <option value="$PROJECT_DIR$/src/database/accounts" />
-        <option value="$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java" />
         <option value="$PROJECT_DIR$/src/database/info" />
         <option value="$PROJECT_DIR$/src/lab_7/message/registration/RegistrationRequest.java" />
         <option value="$PROJECT_DIR$/src/lab_7/crypto/Mail.java" />
         <option value="$PROJECT_DIR$/src/lab_7/message/loggingIn/IdentificationRequest.java" />
         <option value="$PROJECT_DIR$/src/lab_7/server/core/SignUpInHandler.java" />
         <option value="$PROJECT_DIR$/src/lab_7/client/core/NetworkConnection.java" />
+        <option value="$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java" />
       </list>
     </option>
   </component>
@@ -142,12 +162,6 @@
               <item name="lab_7" type="b2602c69:ProjectViewProjectNode" />
               <item name="lab_7" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lab_7" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lab_7" type="b2602c69:ProjectViewProjectNode" />
@@ -223,7 +237,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560336295409" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560337648474" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -313,8 +327,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Client (1)" />
         <item itemvalue="Application.Server" />
+        <item itemvalue="Application.Client (1)" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.DatabaseTest" />
         <item itemvalue="JAR Application.json.jar" />
@@ -458,7 +472,21 @@
       <option name="project" value="LOCAL" />
       <updated>1560332295027</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Mail перенесён на сервер; Исправлен вывод исключений Mail; Смена алгоритма хеширования с SHA-256 на SHA-224; Генерация паролей и ключей перенесена на серверную часть; Добавлено отображение информации о ходе регистрации, аутентификации и авторизации пользователя на сервере.">
+      <created>1560336520125</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1560336520125</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Mail перенесён на сервер; Исправлен вывод исключений Mail; Смена алгоритма хеширования с SHA-256 на SHA-224; Генерация паролей и ключей перенесена на серверную часть; Добавлено отображение информации о ходе регистрации, аутентификации и авторизации пользователя на сервере.">
+      <created>1560336525019</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1560336525019</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView">
@@ -472,6 +500,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8870229" weight="0.29717764" />
       <window_info id="Structure" order="1" sideWeight="0.1129771" side_tool="true" visible="true" weight="0.29717764" />
@@ -550,7 +579,8 @@
     <MESSAGE value="FIX JSON Parse List exception" />
     <MESSAGE value="Database Accounts fixed" />
     <MESSAGE value="Переношу mail на сервер" />
-    <option name="LAST_COMMIT_MESSAGE" value="Переношу mail на сервер" />
+    <MESSAGE value="Mail перенесён на сервер; Исправлен вывод исключений Mail; Смена алгоритма хеширования с SHA-256 на SHA-224; Генерация паролей и ключей перенесена на серверную часть; Добавлено отображение информации о ходе регистрации, аутентификации и авторизации пользователя на сервере." />
+    <option name="LAST_COMMIT_MESSAGE" value="Mail перенесён на сервер; Исправлен вывод исключений Mail; Смена алгоритма хеширования с SHA-256 на SHA-224; Генерация паролей и ключей перенесена на серверную часть; Добавлено отображение информации о ходе регистрации, аутентификации и авторизации пользователя на сервере." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -697,23 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/accounts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="46" selection-end-line="1" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/server/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-          <folding>
-            <element signature="e#857#865#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/database/info">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -739,16 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="40" column="68" lean-forward="true" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -885,6 +888,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="74" column="44" selection-start-line="74" selection-start-column="44" selection-end-line="74" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/accounts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="46" selection-end-line="1" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/server/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="267" column="28" lean-forward="true" selection-start-line="267" selection-start-column="28" selection-end-line="267" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

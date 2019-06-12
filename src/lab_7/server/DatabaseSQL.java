@@ -8,6 +8,7 @@ import lab_7.world.creation.Dancer;
 
 import java.sql.*;
 import java.time.OffsetDateTime;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -38,8 +39,8 @@ public class DatabaseSQL {
                             " VALUES (?,?,?,?,?)";
                     PreparedStatement pst = con.prepareStatement(sql);
                     pst.setString(1, String.valueOf(account.login));
-                    pst.setBytes(2, account.privateKey);
-                    pst.setBytes(3, account.publicKey);
+                    pst.setBytes(2, account.publicKey);
+                    pst.setBytes(3, account.privateKey);
                     pst.setString(4, String.valueOf(account.registrationDate));
                     pst.setString(5, String.valueOf(account.lastAccessTime));
                     pst.executeUpdate();
@@ -76,7 +77,6 @@ public class DatabaseSQL {
                     acc.privateKey = rs.getBytes(3);
                     acc.registrationDate = rs.getString(4);
                     acc.lastAccessTime = Long.valueOf(rs.getString(5));
-
                     accounts.put(acc.login, acc);//???
 
                 }

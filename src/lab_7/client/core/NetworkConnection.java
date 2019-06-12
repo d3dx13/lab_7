@@ -1,6 +1,5 @@
 package lab_7.client.core;
 
-import lab_7.crypto.Mail;
 import lab_7.message.Crypted;
 import lab_7.message.Message;
 import lab_7.message.loggingIn.*;
@@ -13,7 +12,6 @@ import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.spec.SecretKeySpec;
 import java.io.*;
-import java.math.BigInteger;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
@@ -21,7 +19,6 @@ import java.nio.channels.UnresolvedAddressException;
 import java.nio.charset.Charset;
 import java.security.*;
 import java.security.spec.PKCS8EncodedKeySpec;
-import java.security.spec.RSAKeyGenParameterSpec;
 import java.time.Instant;
 import java.util.Arrays;
 
@@ -75,37 +72,14 @@ public class NetworkConnection {
                 return false;
             }
 
-            String password;
-            password = randomAlphaNumeric(8);
             System.out.println(new StringBuilder()
                     .append("Введите вашу электронную почту (на неё будет отправлен пароль): "));
-            String email = reader.readLine().trim();
-
-            System.out.println("\nGenerating RSA pair...");
-            KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance("RSA");
-            RSAKeyGenParameterSpec kpgSpec = new RSAKeyGenParameterSpec(userRSAKeyLength, BigInteger.probablePrime(userRSAKeyLength - 1, new SecureRandom()));
-            System.out.println("Generating done");
-            System.out.println("Generating encrypted AES passwords");
-            keyPairGenerator.initialize(kpgSpec);
-            KeyPair keyPair = keyPairGenerator.genKeyPair();
-            registrationRequest.publicKey = keyPair.getPublic().getEncoded();
-            MessageDigest sha = MessageDigest.getInstance("SHA-256");
-            byte[] secretKey = Arrays.copyOf(sha.digest(password.getBytes(Charset.forName("UTF-8"))), userAESKeySize);
-            SecretKeySpec secretKeySpec = new SecretKeySpec(secretKey, "AES");
-            Cipher cipher = Cipher.getInstance("AES");
-            cipher.init(Cipher.ENCRYPT_MODE, secretKeySpec);
-            registrationRequest.privateKey = cipher.doFinal(keyPair.getPrivate().getEncoded());
-            System.out.println("Generating done");
+            registrationRequest.email = reader.readLine().trim();
             System.out.println("Waiting for registration from the server");
             RegistrationResponse registrationResponse = registration(registrationRequest);
             System.out.print("Registration: ");
             if (registrationResponse.confirm) {
                 System.out.println(registrationResponse.message);
-                objectCryption.setSecretKey(secretKey);
-                if (password.equals(""))
-                    Mail.sendMessage(email, "Ваш логин: \""+registrationRequest.login+"\"\nВаш пароль - просто клацните по клавише Enter.\nНе безопасно, но кому нужны эти пароли, верно?\nGlory to Richard Matthew Stallman !!!\n");
-                else
-                    Mail.sendMessage(email, "Ваш логин: \""+registrationRequest.login+"\"\nВаш пароль: \""+password+"\"\nНе удаляйте это сообщение или перепишите пароль.\nКопии этого пароля не существует\n");
                 return true;
             } else
                 System.out.println("failed\nReason: " + registrationResponse.message);
@@ -134,7 +108,7 @@ public class NetworkConnection {
             System.out.print("Logging in...\nEnter your password: ");
             password = reader.readLine();
             //password = new String(console.readPassword());
-            MessageDigest sha = MessageDigest.getInstance("SHA-256");
+            MessageDigest sha = MessageDigest.getInstance("SHA-224");
             SecretKeySpec secretKeySpec = new SecretKeySpec(Arrays.copyOf(sha.digest(password.getBytes(Charset.forName("UTF-8"))), userAESKeySize), "AES");
             Cipher cipher = Cipher.getInstance("AES");
             cipher.init(Cipher.DECRYPT_MODE, secretKeySpec);
@@ -168,9 +142,6 @@ public class NetworkConnection {
                 return true;
             }
             System.out.println("Authentication failed: " + authenticationResponse.message);
-            return false;
-        } catch (UnresolvedAddressException ex){
-            System.out.println("Address is incorrect");
             return false;
         } catch (Exception ex){
             System.out.println(ex.getMessage());
@@ -228,18 +199,4 @@ public class NetworkConnection {
      * Экземпляр класса ObjectCryption для работы с шифрованием и сериализацией.
      */
     public static ObjectCryption objectCryption = new ObjectCryption();
-    /**
-     * Функция генерации случайной строки.
-     * @param count длина
-     * @return Ответ сервера
-     */
-    public static String randomAlphaNumeric(int count) {
-        final String ALPHA_NUMERIC_STRING = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-        StringBuilder builder = new StringBuilder();
-        while (count-- != 0) {
-            int character = (int)(Math.random()*ALPHA_NUMERIC_STRING.length());
-            builder.append(ALPHA_NUMERIC_STRING.charAt(character));
-        }
-        return builder.toString();
-    }
 }

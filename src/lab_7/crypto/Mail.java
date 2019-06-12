@@ -12,7 +12,7 @@ public class Mail {
     private static final String PASSWORD = "lab7isthebest";
     private static final int PORT = 465;
 
-    public static void sendMessage(String email, String message){
+    public static void sendMessage(String email, String message) throws MessagingException {
         String from = USERNAME + FROMMAIL;
         String host = "smtp.yandex.com";
 
@@ -22,7 +22,7 @@ public class Mail {
         props.put("mail.smtp.ssl.enable", "true");
         props.put("mail.smtp.port", PORT);
         props.put("mail.smtp.auth", "true");
-        props.put("mail.debug", "true");
+        props.put("mail.debug", "false");
         Session session = Session.getDefaultInstance(props, new javax.mail.Authenticator() {
             @Override
             protected PasswordAuthentication getPasswordAuthentication() {
@@ -30,19 +30,13 @@ public class Mail {
             }
         });
 
-        try {
-            Message msg = new MimeMessage(session);
-            msg.setFrom(new InternetAddress(from));
-            //System.out.println(email);
-            InternetAddress[] address = {new InternetAddress(email)};
-            msg.setRecipients(Message.RecipientType.TO, address);
-            msg.setSubject("ЗБС - Золотой Болт Сантехника. Всегда рядом с вами.");
-            msg.setSentDate(new Date());
-            msg.setText(message);
-            Transport.send(msg);
-        }
-        catch (MessagingException mex) {
-            mex.printStackTrace();
-        }
+        Message msg = new MimeMessage(session);
+        msg.setFrom(new InternetAddress(from));
+        InternetAddress[] address = {new InternetAddress(email)};
+        msg.setRecipients(Message.RecipientType.TO, address);
+        msg.setSubject("ЗБС - Золотой Болт Сантехника. Всегда рядом с вами.");
+        msg.setSentDate(new Date());
+        msg.setText(message);
+        Transport.send(msg);
     }
 }

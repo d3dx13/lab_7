@@ -52,13 +52,13 @@ public class NetworkConnection {
      * @param hostname Адрес сервера
      * @param port Порт
      */
-    public static void setServerAddressr(String hostname, int port){
+    public static void setServerAddress(String hostname, int port){
         serverAddress = new InetSocketAddress(hostname, port);
     }
     /**
      * @return Текущее соединение.
      */
-    public static InetSocketAddress getServerAddressr(){
+    public static InetSocketAddress getServerAddress(){
         return serverAddress;
     }
     /**
@@ -67,7 +67,6 @@ public class NetworkConnection {
      */
     public static boolean signUp() {
         try {
-            String password;
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             RegistrationRequest registrationRequest = new RegistrationRequest();
             registrationRequest.login = objectCryption.getUserLogin();
@@ -75,10 +74,13 @@ public class NetworkConnection {
                 System.out.println("!!! Login must be %d to %d characters !!!");
                 return false;
             }
+
+            String password;
             password = randomAlphaNumeric(8);
             System.out.println(new StringBuilder()
                     .append("Введите вашу электронную почту (на неё будет отправлен пароль): "));
             String email = reader.readLine().trim();
+
             System.out.println("\nGenerating RSA pair...");
             KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance("RSA");
             RSAKeyGenParameterSpec kpgSpec = new RSAKeyGenParameterSpec(userRSAKeyLength, BigInteger.probablePrime(userRSAKeyLength - 1, new SecureRandom()));

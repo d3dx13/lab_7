@@ -8,12 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d8c998e2-38f5-440e-95ff-15ca6a07de7d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/accounts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/server/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/server/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/server/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_7/server/core/CommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/server/core/CommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab_7/client/core/NetworkConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_7/client/core/NetworkConnection.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,65 +17,53 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1160919507">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="accounts" value="3" />
+          <entry key="class" value="1" />
+          <entry key="info" value="1" />
+          <entry key="java" value="28" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="28" />
+          <entry key="PLAIN_TEXT" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="102" />
+          <entry key="txt" value="101" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="102" />
+          <entry key="PLAIN_TEXT" value="101" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lab_7/client/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lab_7/server/Server.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="20" column="59" lean-forward="true" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
-              <folding>
-                <element signature="e#508#509#0" expanded="true" />
-                <element signature="e#554#555#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lab_7/message/Crypted.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="825">
+              <caret line="115" column="29" selection-start-line="115" selection-start-column="12" selection-end-line="115" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/lab_7/server/core/CommandHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/lab_7/client/core/NetworkConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="227" column="48" lean-forward="true" selection-start-line="227" selection-start-column="48" selection-end-line="227" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lab_7/server/core/MonoThreadClientHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lab_7/server/core/MultiThreadServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            <state relative-caret-position="285">
+              <caret line="76" column="12" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -88,47 +71,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lab_7/server/core/SignUpInHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-398">
-              <caret line="76" column="32" lean-forward="true" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
+            <state relative-caret-position="273">
+              <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="255" column="69" selection-start-line="255" selection-start-column="69" selection-end-line="255" selection-end-column="69" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2560#2577#0" expanded="true" />
-                <element signature="e#10307#10308#0" expanded="true" />
-                <element signature="e#10383#10384#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lab_7/server/Database.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lab_7/crypto/ObjectCryption.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -151,6 +98,7 @@
       <find>Enter</find>
       <find>ac</find>
       <find>collectionLoad</find>
+      <find>setServerAddress</find>
     </findStrings>
     <replaceStrings>
       <replace>lab_7</replace>
@@ -172,19 +120,19 @@
         <option value="$PROJECT_DIR$/src/database/DatabaseTest.java" />
         <option value="$PROJECT_DIR$/src/lab_7/crypto/Mail.java" />
         <option value="$PROJECT_DIR$/src/database/data" />
-        <option value="$PROJECT_DIR$/src/database/info" />
         <option value="$PROJECT_DIR$/src/lab_7/client/userInterface/TableGUI.java" />
         <option value="$PROJECT_DIR$/src/lab_7/client/userInterface/ConsoleGUI.java" />
         <option value="$PROJECT_DIR$/src/lab_7/world/creation/Dancer.java" />
         <option value="$PROJECT_DIR$/src/lab_7/world/state/DynamicsState.java" />
-        <option value="$PROJECT_DIR$/src/lab_7/client/core/NetworkConnection.java" />
         <option value="$PROJECT_DIR$/src/lab_7/message/Account.java" />
+        <option value="$PROJECT_DIR$/src/lab_7/server/Database.java" />
+        <option value="$PROJECT_DIR$/src/lab_7/server/core/CommandHandler.java" />
+        <option value="$PROJECT_DIR$/src/lab_7/server/Server.java" />
         <option value="$PROJECT_DIR$/src/lab_7/client/core/CommandParser.java" />
         <option value="$PROJECT_DIR$/src/database/accounts" />
-        <option value="$PROJECT_DIR$/src/lab_7/server/core/CommandHandler.java" />
-        <option value="$PROJECT_DIR$/src/lab_7/server/Database.java" />
         <option value="$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java" />
-        <option value="$PROJECT_DIR$/src/lab_7/server/Server.java" />
+        <option value="$PROJECT_DIR$/src/database/info" />
+        <option value="$PROJECT_DIR$/src/lab_7/client/core/NetworkConnection.java" />
       </list>
     </option>
   </component>
@@ -193,6 +141,9 @@
     <option name="y" value="20" />
     <option name="width" value="1346" />
     <option name="height" value="692" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -244,44 +195,6 @@
               <item name="lab_7" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="lab_7" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="userInterface" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lab_7" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
-              <item name="crypto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lab_7" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lab_7" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
-              <item name="loggingIn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lab_7" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
-              <item name="registration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lab_7" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -292,35 +205,6 @@
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="lab_7" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
-              <item name="world" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lab_7" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
-              <item name="world" type="462c0819:PsiDirectoryNode" />
-              <item name="creation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lab_7" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
-              <item name="world" type="462c0819:PsiDirectoryNode" />
-              <item name="state" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lab_7" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lab_7" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="libraries" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -329,7 +213,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560332385063" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560332253894" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -353,7 +237,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client (1)">
+  <component name="RunManager" selected="Application.Server">
     <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lab_7.client.Client" />
       <module name="lab_7" />
@@ -543,7 +427,21 @@
       <option name="project" value="LOCAL" />
       <updated>1560324247353</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Database Accounts fixed">
+      <created>1560328461470</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1560328461470</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Database Accounts fixed">
+      <created>1560331302995</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1560331302995</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView">
@@ -556,26 +454,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8624535" weight="0.21593626" />
-      <window_info id="Structure" order="1" sideWeight="0.13754646" side_tool="true" weight="0.29717764" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8908108" weight="0.29717764" />
+      <window_info active="true" id="Structure" order="1" sideWeight="0.10918919" side_tool="true" visible="true" weight="0.29717764" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32713178" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38449612" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4996016" weight="0.13953489" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32864866" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.11675676" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4996016" weight="0.35968992" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32868218" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32868218" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5003984" side_tool="true" weight="0.26666668" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32713178" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32864866" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
       <window_info anchor="right" id="Palette" order="2" />
@@ -616,6 +515,9 @@
       <window_info anchor="right" id="Maven" order="8" />
     </layout-to-restore>
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
     <MESSAGE value="Copy lab6 to lab7" />
@@ -630,8 +532,8 @@
     <MESSAGE value="+ сохранение и загрузка Accounts с помощью БД" />
     <MESSAGE value="add javax.mail lib" />
     <MESSAGE value="FIX JSON Parse List exception" />
-    <MESSAGE value="Лишнее удалено. &#10;info добавлено(выводит кол-во элементов)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Лишнее удалено. &#10;info добавлено(выводит кол-во элементов)" />
+    <MESSAGE value="Database Accounts fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Database Accounts fixed" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -639,13 +541,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/time/ZoneOffset.java" />
-    <entry file="file://$PROJECT_DIR$/src/lab_7/Settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/time/OffsetDateTime.java" />
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/stream/ReferencePipeline.java" />
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/LinkedList.java" />
@@ -686,13 +581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/DatabaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -741,20 +629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/message/registration/RegistrationRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/message/registration/RegistrationResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lab_7/message/loggingIn/AuthenticationResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -788,13 +662,6 @@
         <state relative-caret-position="-48" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="112" lean-forward="true" selection-start-line="2" selection-start-column="112" selection-end-line="2" selection-end-column="112" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lab_7/message/CollectionInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -816,17 +683,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/client/core/FileParser.java">
+    <entry file="file://$PROJECT_DIR$/src/lab_7/message/Crypted.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-97">
-          <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/client/core/NetworkConnection.java">
+    <entry file="file://$PROJECT_DIR$/src/lab_7/server/core/CommandHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="125" selection-start-line="125" selection-end-line="125" />
+        <state relative-caret-position="30">
+          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -858,23 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/client/core/CommandParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1935">
-          <caret line="131" column="5" lean-forward="true" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/client/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/database/accounts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -882,10 +735,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/crypto/ObjectCryption.java">
+    <entry file="file://$PROJECT_DIR$/src/lab_7/server/Database.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="390">
+          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+          <folding>
+            <element signature="e#857#865#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="180" lean-forward="true" selection-start-line="2" selection-start-column="180" selection-end-line="2" selection-end-column="180" />
         </state>
       </provider>
     </entry>
@@ -896,43 +759,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/server/core/MultiThreadServer.java">
+    <entry file="file://$PROJECT_DIR$/src/lab_7/Settings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        <state relative-caret-position="360">
+          <caret line="45" column="7" lean-forward="true" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/server/core/SignUpInHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/database/DatabaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-398">
-          <caret line="76" column="32" lean-forward="true" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/server/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="345">
+          <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab_7/server/DatabaseSQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="255" column="69" selection-start-line="255" selection-start-column="69" selection-end-line="255" selection-end-column="69" />
+        <state relative-caret-position="105">
+          <caret line="40" column="68" lean-forward="true" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2560#2577#0" expanded="true" />
-            <element signature="e#10307#10308#0" expanded="true" />
-            <element signature="e#10383#10384#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/message/registration/RegistrationRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/message/registration/RegistrationResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/client/core/FileParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/client/core/CommandParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/crypto/ObjectCryption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-356">
+          <caret line="74" column="44" selection-start-line="74" selection-start-column="44" selection-end-line="74" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="30" column="41" lean-forward="true" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/server/core/MultiThreadServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -943,31 +842,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/message/Crypted.java">
+    <entry file="file://$PROJECT_DIR$/src/lab_7/server/core/SignUpInHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/server/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="20" column="59" lean-forward="true" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
-          <folding>
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab_7/server/core/CommandHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="227" column="48" lean-forward="true" selection-start-line="227" selection-start-column="48" selection-end-line="227" selection-end-column="48" />
+        <state relative-caret-position="273">
+          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/client/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="115" column="29" selection-start-line="115" selection-start-column="12" selection-end-line="115" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab_7/client/core/NetworkConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="76" column="12" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="12" />
         </state>
       </provider>
     </entry>

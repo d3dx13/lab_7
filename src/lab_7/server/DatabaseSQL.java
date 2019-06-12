@@ -170,7 +170,7 @@ public class DatabaseSQL {
     }
 
 
-    public static LinkedList<Dancer> getFromDB(String login) {
+    public static LinkedList<Dancer> getFromDB() {
         try {
             Class.forName("org.postgresql.Driver");
             Connection con = DriverManager.getConnection(urlDB, loginDB, passwordDB);
@@ -253,7 +253,7 @@ public class DatabaseSQL {
 
 
     public synchronized static String getInfoSQL(){
-        return "EMPTY";
+        return "Размер коллекции: " + DatabaseSQL.getFromDB().size();
     }
 
 

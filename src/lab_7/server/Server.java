@@ -16,7 +16,6 @@ public class Server {
         class MyShutdownHook extends Thread {
             public void run() {
                 accountsSave();
-                collectionSave();
             }
         }
         MyShutdownHook shutdownHook = new MyShutdownHook();
@@ -29,8 +28,7 @@ public class Server {
                 .append(account.registrationDate)
                 .append("\n"));
         System.out.println(stringBuffer);
-        collectionLoad();
-        System.out.println(getInfo());
+        System.out.println(DatabaseSQL.getInfoSQL());
         MultiThreadServer.main();
     }
 }

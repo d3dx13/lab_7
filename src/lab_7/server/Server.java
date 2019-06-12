@@ -12,7 +12,7 @@ import static lab_7.server.Database.*;
  * После чего стартует многопоточный сервис-обработчик задач.
  */
 public class Server {
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
         class MyShutdownHook extends Thread {
             public void run() {
                 accountsSave();

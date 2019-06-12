@@ -106,8 +106,8 @@ public class NetworkConnection {
             IdentificationResponse identificationResponse = identification(identificationRequest);
             AuthenticationRequest authenticationRequest = new AuthenticationRequest();
             System.out.print("Logging in...\nEnter your password: ");
-            password = reader.readLine();
-            //password = new String(console.readPassword());
+            //password = reader.readLine();
+            password = new String(console.readPassword());
             MessageDigest sha = MessageDigest.getInstance("SHA-224");
             SecretKeySpec secretKeySpec = new SecretKeySpec(Arrays.copyOf(sha.digest(password.getBytes(Charset.forName("UTF-8"))), userAESKeySize), "AES");
             Cipher cipher = Cipher.getInstance("AES");

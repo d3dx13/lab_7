@@ -13,7 +13,7 @@ import java.time.Instant;
 import java.util.Date;
 
 import static lab_7.server.Database.*;
-import static lab_7.server.Database.collectionLoad;
+import static lab_7.server.DatabaseSQL.getFromDB;
 import static lab_7.server.DatabaseSQL.getInfoSQL;
 
 /**
@@ -52,10 +52,6 @@ class CommandHandler {
             return add(message);
         if (message.text.length() > 5 && message.text.substring(0,6).equals("remove"))
             return remove(message);
-        if (message.text.length() > 3 && message.text.substring(0,4).equals("save"))
-            return save();
-        if (message.text.length() > 3 && message.text.substring(0,4).equals("load"))
-            return load();
         if (message.text.length() > 3 && message.text.substring(0,4).equals("info"))
             return info();
         if (message.text.length() > 8 && message.text.substring(0,9).equals("new table"))
@@ -149,8 +145,7 @@ class CommandHandler {
     private static Message show(Message request){
         Message response = new Message();
         response.text = "show";
-        //collectionData.stream().sorted().forEachOrdered(dancer -> response.values.addLast(dancer));
-        response.values.addAll(DatabaseSQL.getFromDB(request.login));
+        response.values.addAll(DatabaseSQL.getFromDB());
         return response;
     }
 
@@ -162,13 +157,10 @@ class CommandHandler {
      */
     private static Message add(Message request){
         Message response = new Message();
-        response.text = "add success";
-        request.values.parallelStream().map(o -> (Dancer)o).forEach(dancer -> collectionData.add(dancer));
-        collectionInfo.lastChangeTime = Date.from(Instant.now()).toString();
-
         try {
             request.values.parallelStream().map(o -> (Dancer) o).forEach(dancer -> DatabaseSQL.insertToDB(dancer, request.login));
-        } catch (Exception e) {e.printStackTrace();}
+        } catch (Exception e){e.printStackTrace();}
+        response.text = "add success";
         return response;
     }
 
@@ -180,18 +172,17 @@ class CommandHandler {
      */
     private static Message add_if_max(Message request){
         Message response = new Message();
-        if (collectionData.isEmpty()){
+        if (getFromDB().isEmpty()){
             response.text = "add_if_max failed";
             return response;
         }
-        Dancer dancerMax = collectionData.stream().max((dancer, t1) -> (dancer.getDanceQuality() - t1.getDanceQuality())).get();
-        request.values.parallelStream().map(o -> (Dancer)o).filter(o -> (o.getDanceQuality() >= dancerMax.getDanceQuality())).forEach(dancer -> collectionData.add(dancer));
-        response.text = "add_if_max success";
-        collectionInfo.lastChangeTime = Date.from(Instant.now()).toString();
-
+        Dancer dancerMax = DatabaseSQL.getFromDB().stream().max((dancer, t1) -> (dancer.getDanceQuality() - t1.getDanceQuality())).get();
         try {
             request.values.parallelStream().map(o -> (Dancer)o).filter(o -> (o.getDanceQuality() >= dancerMax.getDanceQuality())).forEach(dancer -> DatabaseSQL.insertToDB(dancer, request.login));
         } catch (Exception e) {e.printStackTrace();}
+        response.text = "add_if_max success";
+
+
         return response;
     }
     /**
@@ -202,19 +193,15 @@ class CommandHandler {
      */
     private static Message add_if_min(Message request){
         Message response = new Message();
-        if (collectionData.isEmpty()){
+        if (DatabaseSQL.getFromDB().isEmpty()){
             response.text = "add_if_min failed";
             return response;
         }
-        Dancer dancerMin = collectionData.stream().min((dancer, t1) -> (dancer.getDanceQuality() - t1.getDanceQuality())).get();
-        request.values.parallelStream().map(o -> (Dancer)o).filter(o -> (o.getDanceQuality() <= dancerMin.getDanceQuality())).forEach(dancer -> collectionData.add(dancer));
-        response.text = "add_if_min success";
-        collectionInfo.lastChangeTime = Date.from(Instant.now()).toString();
-
+        Dancer dancerMin = DatabaseSQL.getFromDB().stream().min((dancer, t1) -> (dancer.getDanceQuality() - t1.getDanceQuality())).get();
         try {
             request.values.parallelStream().map(o -> (Dancer)o).filter(o -> (o.getDanceQuality() <= dancerMin.getDanceQuality())).forEach(dancer -> DatabaseSQL.insertToDB(dancer, request.login));
         } catch (Exception e) {e.printStackTrace();}
-
+        response.text = "add_if_min success";
         return response;
     }
     /**
@@ -225,38 +212,12 @@ class CommandHandler {
      */
     private static Message remove(Message request){
         Message response = new Message();
-        request.values.parallelStream().map(o -> (Dancer)o).forEach(o -> collectionData.remove(o));
-        response.text = "remove success";
-        collectionInfo.lastChangeTime = Date.from(Instant.now()).toString();
         request.values.parallelStream().map(o -> (Dancer)o).forEach(o -> DatabaseSQL.removeFromDB(o,request.login));
+        response.text = "remove success";
         return response;
     }
 
-    /**
-     * Метод, сохраняющий коллекцию элементов на сервере в файл.
-     * @return Объект Message, содержащий текст об успешности сохранения коллекции.
-     */
-    private static Message save(){
-        Message response = new Message();
-        if (collectionSave())
-            response.text = "save success";
-        else
-            response.text = "save failed";
-        return response;
-    }
-    /**
-     * Метод, загружающий коллекцию элементов на сервер из файла.
-     * @return Объект Message, содержащий текст об успешности загрузки коллекции.
-     */
-    private static Message load(){
-        Message response = new Message();
-        response.text = "load success";
-        if (collectionLoad())
-            response.text = "load success";
-        else
-            response.text = "load failed";
-        return response;
-    }
+
 
     /**
      * Метод, возвращающий объект Message, содержащий информацию о коллекции, хранящейся на сервере.

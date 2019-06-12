@@ -67,7 +67,6 @@ public class NetworkConnection {
      */
     public static boolean signUp() {
         try {
-            String password;
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             RegistrationRequest registrationRequest = new RegistrationRequest();
             registrationRequest.login = objectCryption.getUserLogin();
@@ -76,7 +75,7 @@ public class NetworkConnection {
                 return false;
             }
 
-
+            String password;
             password = randomAlphaNumeric(8);
             System.out.println(new StringBuilder()
                     .append("Введите вашу электронную почту (на неё будет отправлен пароль): "));

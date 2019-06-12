@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 
 import static lab_7.Settings.loginMaximalLength;
 import static lab_7.Settings.loginMinimalLength;
-import static lab_7.client.core.NetworkConnection.getServerAddressr;
+import static lab_7.client.core.NetworkConnection.getServerAddress;
 
 /**
  * Оболочка клиента.
@@ -23,7 +23,7 @@ public class Client {
             login();
             while (true){
                 try {
-                    System.out.print(String.format("[offline] Address{%s} : %s :>>> ", getServerAddressr(), NetworkConnection.objectCryption.getUserLogin()));
+                    System.out.print(String.format("[offline] Address{%s} : %s :>>> ", getServerAddress(), NetworkConnection.objectCryption.getUserLogin()));
                     String command = reader.readLine().trim();
                     if (command.length() > 3 && command.substring(0, 4).equals("help")) {
                         help();
@@ -61,7 +61,7 @@ public class Client {
             System.out.println("В поле \"port\" нужно ввести порт сервера\nЭто целое число от 1 до 65535");
             return;
         }
-        NetworkConnection.setServerAddressr(hostname, port);
+        NetworkConnection.setServerAddress(hostname, port);
     }
     /**
      * Помощь по командам.
@@ -98,7 +98,7 @@ public class Client {
      * Попытка подключения к серверу.
      */
     private static void connect()  {
-        if (getServerAddressr() == null)
+        if (getServerAddress() == null)
             server();
         try {
             if (NetworkConnection.signIn())
@@ -111,7 +111,7 @@ public class Client {
      * Попытка регистрации на сервере.
      */
     private static void registration(){
-        if (getServerAddressr() == null)
+        if (getServerAddress() == null)
             server();
         if (NetworkConnection.signUp())
             connect();
